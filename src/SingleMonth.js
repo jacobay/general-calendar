@@ -131,7 +131,7 @@ class SingleMonth {
 
   // 获取所有日期数据
   getTotalDateCell() {
-
+    let cells = [];
     // prev month disabled days
     if (this.existPrevMonthDays) {
 
