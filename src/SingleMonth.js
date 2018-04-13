@@ -1,5 +1,5 @@
 import moment from 'moment';
-// import assign from 'object-assign';
+import assign from 'object-assign';
 import { toDouble } from './tool';
 
 class SingleMonth {

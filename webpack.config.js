@@ -4,9 +4,8 @@ const webpack = require('webpack');
 const path = require('path');
 const packageJSON = require('./package.json');
 const webpackUMDExternal = require('webpack-umd-external');
-
 let config = {
-    entry: ["babel-polyfill", path.join(__dirname, 'src/index.js')],
+    entry: path.join(__dirname, 'src/index.js'),
     output: {
         path: path.join(__dirname, 'lib'),
         filename: 'general-calendar.js',
@@ -25,10 +24,17 @@ let config = {
             }
         ]
     },
-    plugins: [],
+    plugins: [
+        new webpack.BannerPlugin(
+            `${packageJSON.name}.js
+Version: ${packageJSON.version}
+Address: (${packageJSON.repository.url})
+Author: ${packageJSON.author}
+Licensed under the ${packageJSON.license} license`),
+    ],
     resolve: {
         extensions: ['.js']
-    }
+    },
 };
 
 if(env === 'production') {
