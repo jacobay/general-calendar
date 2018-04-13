@@ -6,7 +6,7 @@ const packageJSON = require('./package.json');
 const webpackUMDExternal = require('webpack-umd-external');
 
 let config = {
-    entry: path.join(__dirname, 'src/index.js'),
+    entry: ["babel-polyfill", path.join(__dirname, 'src/index.js')],
     output: {
         path: path.join(__dirname, 'lib'),
         filename: 'general-calendar.js',
