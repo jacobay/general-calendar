@@ -1,0 +1,28 @@
+{
+  "name": "general-calendar",
+  "version": "1.0.0",
+  "description": "calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leesipeng/general-calendar.git"
+  },
+  "keywords": [
+    "calendar"
+  ],
+  "author": "lisipeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leesipeng/general-calendar/issues"
+  },
+  "homepage": "https://github.com/leesipeng/general-calendar#readme",
+  "dependencies": {
+    "moment": "^2.22.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.5.0"
+  }
+}
