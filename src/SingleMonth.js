@@ -1,5 +1,5 @@
 import moment from 'moment';
-import assign from 'object-assign';
+// import assign from 'object-assign';
 import { toDouble } from './tool';
 
 class SingleMonth {
@@ -8,7 +8,7 @@ class SingleMonth {
     endDate: '',
   }
   constructor(options) {
-    this.options = assign({}, SingleMonth.defaultOptions, options);
+    this.options = Object.assign({}, SingleMonth.defaultOptions, options);
 
     this.init();
   }

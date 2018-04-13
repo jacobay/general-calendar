@@ -12,7 +12,6 @@ let config = {
         filename: 'general-calendar.js',
         library: 'GeneralCalendar',
         libraryTarget: 'umd',
-        umdNameDefine: true
     },
     module: {
         rules: [

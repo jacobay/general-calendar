@@ -1,5 +1,5 @@
 import moment from 'moment';
-import assign from 'object-assign';
+// import assign from 'object-assign';
 import { toDouble } from './tool';
 import SingleMonth from './SingleMonth';
 
@@ -10,7 +10,7 @@ class GeneralCalendar {
     format: 'YYYY-MM-DD'
   }
   constructor(options) {
-    this.options = assign({}, GeneralCalendar.defaultOptions, options);
+    this.options = Object.assign({}, GeneralCalendar.defaultOptions, options);
   }
 
   // 无效对象
